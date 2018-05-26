@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/accredit/accredit",
+    "pages/smDestroy/smDestroy",
+    "pages/login/login",
+    "pages/chooseDestroyCate/chooseDestroyCate",
+    "pages/index/index",
+    "pages/jiFenGuiZe/jiFenGuiZe",
+    "pages/jiFenRanking/jiFenRanking",
+    "pages/calendar/calendar",
+    "pages/infoDetail/infoDetail",
+    "pages/couponDestroyTrue/couponDestroyTrue",
+    "pages/destroy/destroy",
+    "pages/download/download",
+    "pages/my/my",
+    "pages/address/address",
+    "pages/jiFenShangCheng/jiFenShangCheng",
+    "pages/jiFenMingXi/jiFenMingXi",
+    "pages/couponDetail/couponDetail",
+    "pages/myCoupon/myCoupon",
+    "pages/coupon/coupon",
+    "pages/infoList/infoList",
+    "pages/register/register",
+    "pages/storeLogin/storeLogin",
+    "pages/chanPin/chanPin",
+    "pages/myTopic/myTopic",
+    "pages/myLike/myLike",
+    "pages/jiFenShangList/jiFenShangList",
+    "pages/changeStorePwd/changeStorePwd"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "壳牌工程机械英雄会",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#da280d",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home-00.png",
+        "selectedIconPath": "/images/home-01.png"
+      },
+      {
+        "pagePath": "pages/chanPin/chanPin",
+        "text": "产品",
+        "iconPath": "/images/cp-00.png",
+        "selectedIconPath": "/images/cp-01.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my-00.png",
+        "selectedIconPath": "/images/my-01.png"
+      }
+    ]
+  }
+}

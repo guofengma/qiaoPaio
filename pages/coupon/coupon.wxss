@@ -1,0 +1,62 @@
+page{
+	background: #f0f0f0;
+}
+.list-box{
+	padding-top: 20rpx;
+}
+.coupon-item{
+	position: relative;
+	padding: 0 30rpx;
+	color: #fff;
+	margin-bottom: 20rpx;
+	overflow: hidden;
+	height: 278rpx;
+}
+.coupon-bg{
+	position: absolute;
+	left: 30rpx;
+	top: 0;
+	width:calc(100% - 60rpx);
+	z-index: -1;
+}
+.ed-box{
+  flex: 0 0 80rpx;
+  box-sizing: border-box;
+	font-size: 32rpx;
+	width: 30rpx;
+  text-align: center;
+}
+.ed-box .text{
+  width: 100%;
+  word-wrap: break-word;
+}
+.coupon-info-box{
+	/* padding:0 10rpx; */
+	/*width: 410rpx;*/
+	flex:1;
+	box-sizing: border-box;
+}
+.coupon-info-tit{
+	height: 60rpx;
+	line-height: 60rpx;
+	font-size: 32rpx;
+}
+.coupon-info-con{
+	margin-bottom: 20rpx;
+	/* height: 94rpx; */
+  font-size: 24rpx;
+}
+.coupon-yxq{
+  font-size: 24rpx;
+}
+.coupon-handle-box{
+	width: 144rpx;
+	padding: 20rpx 50rpx;
+	box-sizing: border-box;
+	font-size: 34rpx;
+	color: #fddc35;
+}
+
+.xsm{
+  font-size: 22rpx;
+}

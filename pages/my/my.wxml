@@ -1,0 +1,71 @@
+<view class="user-box center-flex">
+  <image class='userhead' mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+  <text class='username'>{{userInfo.nickName}}</text>
+  <view class='qd-box {{isSign == 1 ?"yqd":""}}' bindtap='qianDao'>
+    <text class='qd-hint '>{{isSign == 1 ?'已签到':'签到'}}</text>
+    <image class='jf-icn'  mode='widthFix' src='/images/jf.png'></image>
+  </view>
+</view>
+
+<!-- 积分商城 优惠券中心  -->
+<view class='ad-box'>
+
+  <view class='ad-item center-flex jfsc-box' bindtap='toLink' data-link="/pages/jiFenShangCheng/jiFenShangCheng">
+    <image class='ad-icon' mode='widthFix' src='/images/jfsc.png'></image>
+    <view class='ad-info'>
+      <view class='ad-name'>积分商城</view>
+      <view class='ad-desc jfhhl'>积分换好礼</view>
+    </view>
+  </view>
+
+  <view class='ad-item center-flex' bindtap='toLink' data-link="/pages/coupon/coupon">
+    <image class='ad-icon' mode='widthFix' src='/images/yhqzx.png'></image>
+    <view class='ad-info'>
+      <view class='ad-name'>优惠券中心</view>
+      <view class='ad-desc gdyh'>还有更多优惠哦</view>
+    </view>
+  </view>
+
+</view>
+
+<view class='line-box center-flex' bindtap='saoMa' style='display:none;'>
+  <image class='line-icon' mode='widthFix' src='/images/sm.png'></image>
+  <text class='line-name'>扫码活动</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>
+
+<view class='line-box center-flex' bindtap='toLink' data-link="/pages/myTopic/myTopic">
+  <image class='line-icon' mode='widthFix' src='/images/cy.png'></image>
+  <text class='line-name'>参与话题</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>
+
+<view class='line-box center-flex' bindtap='toLink' data-link="/pages/myCoupon/myCoupon">
+  <image class='line-icon' mode='widthFix' src='/images/yhq.png'></image>
+  <text class='line-name'>我的优惠券</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>
+
+<view class='line-box center-flex' bindtap='toLink' data-link="/pages/myLike/myLike">
+  <image class='line-icon' mode='widthFix' src='/images/shoucang-01.png'></image>
+  <text class='line-name'>我的收藏</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>
+
+<view class='line-box center-flex mb20' bindtap='toDown' data-link="/pages/download/download">
+  <image class='line-icon' mode='widthFix' src='/images/wdxz.png'></image>
+  <text class='line-name'>我的下载</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>
+
+<view class='line-box center-flex mb40' bindtap='toStoreLogin'>
+  <image class='line-icon' mode='widthFix' src='/images/mddl.png'></image>
+  <text class='line-name'>门店登录</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>
+
+<view class='line-box center-flex mb20' bindtap='logout'>
+  <image class='line-icon' mode='widthFix' src='/images/logout.png'></image>
+  <text class='line-name'>退出登录</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>

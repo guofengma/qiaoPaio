@@ -1,0 +1,15 @@
+@import "/pages/template/infoItem/infoItem.wxss";
+
+.list-box{
+	border-top: 1rpx solid #f0f0f0;
+}
+
+.info-info-box{
+	flex-direction: column-reverse;
+}
+
+.info-img-box{
+  float: right;
+  margin-right: 0;
+  margin-left: 20rpx;
+}

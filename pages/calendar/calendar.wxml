@@ -1,0 +1,64 @@
+<!--pages/calendar/calendar.wxml-->
+
+<view class='calendar'>
+  <view class="wdjf">
+    <image class='jf-bg' mode="widthFix" src="/images/jf-bg.png"></image>
+    <image class='user-head' mode='widthFix' src="{{bean.mbImg}}"></image>
+    <view class='jfxx'>
+      <text class='jf-num'>{{bean.mbIntegral}}</text>
+      <image class='jf-icon' mode='widthFix' src="/images/jf.png"></image>
+    </view>
+    <view class='jf-hint wddh' bindtap='goTo' data-index='2'>历史积分排行榜</view>
+    <view class='jfgz-box' bindtap='goTo' data-index='0'>
+      <!-- <image class='wh' mode='widthFix' src='/images/wh.png'></image> -->
+      <text class='jfgz'>积分明细</text>
+      <icon class='iconfont icon-you'></icon>
+    </view>
+  </view>
+
+  <view class='line-box center-flex mb20' bindtap='goTo' data-index='1'>
+    <image class='line-icon' mode='widthFix' src="/images/jfsc.png"></image>
+    <text class='line-name'>积分兑换</text>
+     <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+  </view>
+
+  <view class='moreFrame back marginBottom' data-index='1' bindtap='goTo' style='display:none;'>
+    <view class='moreName'>
+      <view class='moreImg'>
+        <image src='../../images/jfsc.png' mode='widthFix' class='jf-img'></image>
+      </view> 
+      <view class='moreText'>
+        <text>积分兑换</text>
+      </view>
+    </view>
+    <view class='moreIocn'>
+      <view class='iocn'>
+          <icon class='iconfont icon-you'></icon>
+      </view> 
+    </view>
+  </view>
+
+  <view class='dateControl'>
+    <view class='title'>{{getFullYear}}年{{getMonthData}}月</view>
+    <view class='timeList'>
+      <view class='cycle'>
+        <view class='text'>日</view>
+        <view class='text'>一</view>
+        <view class='text'>二</view>
+        <view class='text'>三</view>
+        <view class='text'>四</view>
+        <view class='text'>五</view>
+        <view class='text'>六</view>
+      </view>
+      <view class='dateList'>
+        <view class='text' wx:for="{{timeList}}" wx:key='{{index}}'>
+        <view class='{{item.state === 0 ? "time":"time colorAsh"}}'>
+          <view wx:if='{{item.lightOrder !== 2}}'>{{item.item}}</view> 
+          <view class='backg' wx:if='{{item.lightOrder === 2}}'>{{item.item}}</view>
+        </view>
+        <!-- <view class='{{item.state === 0 && item.lightOrder === 2 ? "backg":""}}'></view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

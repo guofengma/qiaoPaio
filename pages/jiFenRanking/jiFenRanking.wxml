@@ -1,0 +1,23 @@
+<view class="rank-tit-box">
+  <view class='rank-slogn'>此排名依据为历史积分</view>
+  <view class='rank-hint'>历史积分=现有积分+已兑换积分</view>
+</view>
+
+<!-- 
+<view class='my line-box center-flex'>
+  <image class='line-img' mode="widthFix" src="/images/old/user.png"></image>
+  <text class='line-name'>小白白又白</text>
+  <view class='jf-box'>
+    <text class='jifen'>998</text>
+    <text class='label'>积分</text>
+  </view>
+</view> -->
+
+<view class='line-box center-flex' wx:for="{{list}}" wx:key="l">
+  <image class='line-img' mode="widthFix" src="{{item.mbImg}}"></image>
+  <text class='line-name'>{{item.mbName}}</text>
+  <view class='jf-box'>
+    <text class='jifen'>{{item.totalIntegral}}</text>
+    <text class='label'>积分</text>
+  </view>
+</view>

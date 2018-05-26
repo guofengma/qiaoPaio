@@ -1,0 +1,20 @@
+.jfmx-box{
+	border-top: 1rpx solid #f0f0f0;
+}
+.line-box{
+	height: 110rpx;
+	padding: 0 30rpx;
+	justify-content: space-between;
+	border-bottom: 1rpx solid #f0f0f0;
+}
+.cz{
+	font-size: 30rpx;
+}
+.time{
+	font-size: 24rpx;
+	color: #515151;            
+}
+
+.jia{
+	color: #da280d;
+}

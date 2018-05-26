@@ -1,0 +1,16 @@
+<!-- 信息 模板  -->
+<import src="/pages/template/infoItem/infoItem.wxml" />
+<!-- // 引入模板 -->
+<import src="/pages/wxParse/wxParse.wxml"/>
+
+<view class="list-box">
+
+  <!-- 信息 模板  -->
+  <block wx:for="{{list}}" wx:key="l">
+    <!-- <template is="infoItem" data="{{item}}"/> -->
+    <template is="infoItem" data="{{...item,name:listArr,index}}"/>
+  </block>
+
+  <view class='noData' wx:if="{{list.length == 0}}">暂无数据</view>
+  
+</view>

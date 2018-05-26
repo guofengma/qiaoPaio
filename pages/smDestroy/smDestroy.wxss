@@ -1,0 +1,62 @@
+page{
+  padding-top: 200rpx;
+}
+
+.des-box{
+	border-top: 1rpx solid #f0f0f0;
+	padding-top: 60rpx;
+	padding: 60rpx 30rpx 0 30rpx;
+  margin-bottom: 100rpx;
+}
+.des-tit{
+	text-align: center;
+	font-size: 34rpx;
+	margin-bottom: 50rpx;
+	font-weight: 600;
+}
+.des-input{
+	height: 90rpx;
+	width: 100%;
+	border:1rpx solid #aaa;
+	padding-left: 20rpx;
+	box-sizing: border-box;
+}
+.btn-box{
+	position: fixed;
+	bottom: 60rpx;
+	left: 0;
+	right: 0;
+	padding: 30rpx;
+}
+
+.form-controller{
+  padding: 0 30rpx;
+  height: 90rpx;
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 50rpx;
+}
+
+.from-tit{
+  font-size: 34rpx;
+	font-weight: 600;
+}
+
+.label{
+  width: 180rpx;
+  display: flex;
+  align-items: center;
+}
+
+.form-input{
+  flex: 1;
+  height: 90rpx;
+  border:1rpx solid #aaa;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+}
+
+
+.yellow-btn{
+	margin-bottom: 30rpx;
+}

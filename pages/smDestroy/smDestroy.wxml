@@ -1,0 +1,21 @@
+<!-- <view class='des-box'>
+  <view class="des-tit">核销码</view>
+  <input class='des-input' bindinput='saveInput' value='{{ticketCode}}'></input>
+</view> -->
+
+<!-- 核销码 -->
+<view class="form-controller">
+	<text class="label from-tit">核销码</text>
+	<input type="number" class="form-input" disabled="true" value="{{ticketCode}}" placeholder="请输入核销码"></input>
+</view>
+
+<!-- 用户手机号 -->
+<view class="form-controller">
+	<text class="label">用户手机号</text>
+	<input type="number" class="form-input" bindinput='saveInput' placeholder="请输入用户手机号"></input>
+</view>
+
+<view class='btn-box'>
+  <button class='btn yellow-btn' bindtap='destory'>确认核销</button>
+  <button class='btn grey-btn' bindtap='storeSignOut'>退出登录</button>
+</view>

@@ -1,0 +1,12 @@
+<view class="jfmx-box">
+
+  <view class="line-box center-flex" wx:for="{{list}}" wx:key="k">
+    <view class='mx'>
+      <view class='cz'>{{item.logMsg}}</view>
+      <view class='time'>{{item.createTime}}</view>
+    </view>
+    <view class='change jia'>{{item.inNum}}</view>
+  </view>
+
+</view>
+<view class='noData' wx:if="{{list.length == 0}}">暂无数据</view>

@@ -1,0 +1,119 @@
+/* pages/jiFenShangList/jiFenShangList.wxss */
+page{
+	background: #f1f1f1;
+}
+.wdjf{
+	position: relative;
+	height: 300rpx;
+	text-align: center;
+	padding-top: 40rpx;
+	box-sizing: border-box;
+}
+.jf-bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 300rpx;
+	z-index: -1;
+}
+
+.user-head{
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 50%;
+	margin-bottom: 10rpx;
+}
+.jfxx{
+	margin-bottom: 10rpx;
+}
+
+.jf-num{
+	color: #fff;
+	font-size: 48rpx;
+	font-weight: 400;
+	margin-right: 20rpx;
+}
+.jf-icon{
+	width: 25rpx;
+	height: 25rpx;
+}
+.wddh{
+	display: inline-block;
+	padding: 13rpx 78rpx;
+	color: #f06703;
+	background: #fff;
+	border-radius: 20rpx;
+	font-size: 24rpx;
+}
+
+.dh-box{
+
+}
+
+.dh-item{
+	height: 173rpx;
+	border-bottom: 1rpx solid #cdcdcd;
+	padding: 30rpx 40rpx 20rpx 40rpx;
+	box-sizing: border-box;
+}
+
+.dh-img{
+	width: 198rpx;
+  height: 100%;
+	margin-right: 16rpx;
+}
+
+.sp-info{
+	height: 120rpx;
+  width: 330rpx;
+}
+
+.dh-btn{
+	width: 120rpx;
+	height: 40rpx;
+	font-size: 24rpx;
+	text-align: center;
+	border-radius: 10rpx;
+	line-height: 40rpx;
+}
+
+.pro-name{
+	font-size: 26rpx;
+	margin-bottom: 10rpx;
+}
+
+.price{
+	color: #da020c;
+	margin-bottom: 10rpx;
+	font-size: 24rpx;
+}
+
+.dh-hint{
+	color: #753307;
+	font-size: 24rpx;
+}
+
+.ljdh{
+	border:1rpx solid #da020c;
+	color: #da020c;
+}
+
+.jfbz{
+	border: 1rpx solid #818181;
+	color: #818181;
+}
+
+.jfgz-box{
+	position: absolute;
+	color: #fff;
+	font-size: 24rpx;
+	right: 30rpx;
+	top: 25rpx;
+}
+.wh{
+	width: 30rpx;
+	height: 30rpx;
+	margin-right: 10rpx;
+	vertical-align: middle;
+}

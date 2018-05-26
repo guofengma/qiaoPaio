@@ -1,0 +1,37 @@
+.jfgz-box{
+	padding: 30rpx;
+	border-top: 1rpx solid #f0f0f0;
+}
+.jfgz-tit{
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 38rpx;
+	position: relative;
+	margin-bottom: 40rpx;
+}
+.jfgz-tit:after{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 80rpx;
+	border-bottom: 3rpx solid #ff0000;
+	left: 0;
+	bottom: 0;
+}
+.jfgz-con{
+  margin-bottom: 80rpx;
+}
+.jfgz-item{
+	margin-bottom: 20rpx;
+  font-size: 26rpx;
+  line-height: 1.5;
+}
+
+.jf-con-tit{
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+}
+.jf-hint{
+  color: #f00;
+}

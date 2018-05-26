@@ -1,0 +1,109 @@
+page{
+	background: #f4f8fb;
+}
+.user-box{
+	height: 220rpx;
+	padding: 0 30rpx;
+	background: #fff;
+	margin-bottom: 20rpx;
+	border-top: 1rpx solid #f0f0f0;
+}
+.userhead{
+	width: 106rpx;
+	height: 106rpx;
+	margin-right: 16rpx;
+  border-radius:50%; 
+}
+.username{
+	flex:1;
+}
+.qd-box{
+	width: 200rpx;
+	height: 65rpx;
+	background: #fcce07;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20rpx;
+}
+.qd-box.yqd{
+	background: #eee;
+}
+.qd-hint{
+	margin-right: 10rpx;
+}
+.jf-icn{
+	width: 35rpx;
+	height: 35rpx;
+	vertical-align: middle;
+}
+
+
+.ad-box{
+	font-size: 0;
+	display: flex;
+	margin-bottom: 20rpx;
+}
+
+.ad-item{
+	width: 50%;
+	height:130rpx;
+	box-sizing: border-box;
+	overflow: hidden;
+	justify-content: center;
+	background: #fff;
+	position: relative;
+}
+.ad-icon{
+	width: 44rpx;
+	margin-right: 26rpx;
+}
+
+.ad-name{
+	font-size: 32rpx;
+	font-weight: 600;
+	margin-bottom: 10rpx;
+}
+.ad-desc{
+	font-size: 24rpx;
+
+}
+
+.jfhhl{
+	color: #fbce07;
+}
+
+.gdyh{
+	color: #696969;
+}
+
+.jfsc-box:after{
+	display: block;
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 90rpx;
+	border-right: 1rpx solid #f0f0f0;
+	top: 20rpx;
+	right: 0;
+}
+
+
+.line-box{
+	height: 100rpx;
+	border-bottom: 1rpx solid #f0f0f0;
+	padding: 0 30rpx;
+	background: #fff;
+}
+
+.line-icon{
+	width: 36rpx;
+	margin-right: 30rpx;
+}
+.line-name{
+	flex:1;
+}
+
+.right{
+	width: 12rpx;
+}

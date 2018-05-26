@@ -1,0 +1,69 @@
+<!-- // 引入模板 -->
+<import src="/pages/wxParse/wxParse.wxml"/>
+
+<view class="video-box">
+  <video class='info-video' wx:if="{{bean.infoVedio}}" src="{{bean.infoVedio}}" custom-cache="{{false}}" controls="true" objectFit="fill"></video>
+  <image class='info-img' wx:elif="{{bean.infoImg}}" mode='widthFix' src="{{bean.infoImg}}"></image>
+</view>
+<view class='info-con'>
+
+  <!-- //这里data中article为bindName -->
+  <template is="wxParse" data="{{wxParseData:infoContent.nodes}}"/>
+
+</view>
+
+<!-- 操作  -->
+<view class='info-handle-box'>
+
+  <view class='zan-box handle-box' data-sfdz="{{bean.infoLike}}" bindtap='dianZan'>
+    <image class='zan-icon handle-icon' mode='widthFix' src="{{bean.infoLike == 1?'/images/zan-01.png':'/images/zan-00.png'}}"></image>
+    <text class='zan handle-text'>点赞({{bean.likeNum}})</text>
+  </view>
+  <view class='shouCang-box handle-box' data-sfsc="{{bean.memberCollect}}" bindtap='shouCang'>
+    <image class='shouCang-icon handle-icon' mode='widthFix' src="{{bean.memberCollect == 1?'/images/shoucang-01.png':'/images/shoucang-00.png'}}"></image>
+    <text class='shouCang handle-text'>收藏({{bean.collectNum}})</text>
+  </view>
+  <view class='fenXiang-box handle-box'>
+    <button open-type="share" class='zf-btn'></button>
+    <image class='fenXiang-icon handle-icon' mode='widthFix' src="/images/fenxiang.png"></image>
+    <text class='fenXiang handle-text'>分享</text>
+  </view>
+  <view class='xiaZai-box handle-box' bindtap='toggleShowDown'>
+    <image class='xiaZai-icon handle-icon' mode='widthFix' src='/images/xiazai.png'></image>
+    <text class='xiaZai handle-text'>下载</text>
+  </view>
+</view>
+
+<!-- 资源列表  -->
+<view class="zl-box" wx:if="{{showFile == 1}}">
+  <view class='zl-tit'>资源列表<text class='tips'>(点击下载对应文件、本地文件存储的大小限制为10M)</text></view>
+  <view class='zl-hint'>tips:小程序支持打开指定格式文件，若打开失败请用其他软件打开</view>
+  <view class='zl-con' wx:if="{{bean.fileInfoList.length > 0}}">
+    <view class='zl-item' wx:for="{{bean.fileInfoList}}" wx:key="f" data-filepath="{{item.filePath}}" data-seqid="{{item.seqId}}" data-index="{{index}}" data-isdown="{{item.isdown}}" bindtap='downEvent'>{{item.fileName}}</view>
+  </view>
+  <view wx:else class="noData">暂无数据</view>
+</view>
+
+<!-- 评论  -->
+<view class='comment-box'>
+  <view class='comment-tit'>互动专区({{bean.replyNum}})</view>
+  <view class='comment-cont'>
+    
+    <view class='comment-item' wx:for="{{bean.replyList}}" wx:key="r">
+      <view class='comment-user-info center-flex'>
+        <image class='comment-userHead' mode='widthFix' src="{{item.mbImg}}"></image>
+        <text class='comment-userName'>{{item.mbName}}</text>
+      </view>
+      <view class='comment-item-comment'>
+         {{item.replyContentStr}}
+      </view>
+    </view>
+  
+  </view>
+</view>
+
+<!-- 评论输入  -->
+<view class='pl-box'>
+    <input class='pl-input' focus="{{focus}}" value="{{replyContent}}" bindinput='saveInput' bindconfirm='saveReplySimple'></input>
+    <text class='pl-btn' bindtap='saveReplySimple'>发送</text>
+</view>

@@ -1,0 +1,16 @@
+<view class="hint-box">
+  <image class='success' mode='widthFix' src='/images/success.png'></image>
+  <view class='hint'>核销成功</view>
+</view>
+
+<view class='line-box center-flex top-line' bindtap='toDestroy'>
+  <image class='line-icon' mode='widthFix' src='/images/jxhx.png'></image>
+  <text class='line-name'>继续核销</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>
+
+<view class='line-box center-flex' bindtap='toHome'>
+  <image class='line-icon' mode='widthFix' src='/images/home-01.png'></image>
+  <text class='line-name'>返回首页</text>
+  <image class='right' mode='widthFix' src='/images/right-01.png'></image>
+</view>

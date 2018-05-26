@@ -1,0 +1,32 @@
+<!-- <view class="coupon-info-box">
+  <image class='coupon-bg' mode='widthFix' src='/images/quan-detail-bg.png'></image>
+  <view class='coupon-ed'>{{ticketMoney}}元</view>
+  <view class='coupon-qx'>使用期限 {{startTime}}-{{endTime}}</view>
+  <view class='coupon-mc'>{{ticketTxt}}</view>
+  <view class='coupon-fw'>{{ticketDetail}}</view>
+</view> -->
+<view class="coupon-info-box">
+  <image class='coupon-bg' mode='widthFix' src='/images/quan-detail-bg.png'></image>
+  <view class='coupon-ed'>优惠券</view>
+  <view class='coupon-qx'>壳牌工程机械专用油</view>
+  <view class='coupon-mc'></view>
+  <view class='coupon-fw'>话费随机送，100%中奖</view>
+  <view class='xsm'>成功购买，经店铺核销赢得100积分。</view>
+  <view class='xsm'>成功邀请他人购买，经店铺核销赢得200积分。</view>
+  <view class='xz'>仅限线下门店使用</view>  
+</view>
+<view class='coupon-sysm-box'>
+  <view class='coupon-sysm-tit'>使用说明</view>
+  <view class='coupon-sysm-con'>
+    <view class='coupon-sysm-item'>1.仅限在壳牌门店下的商店可以使用；</view>
+     <view class='coupon-sysm-item'>2.此券可终身使用；</view> 
+    <view class='coupon-sysm-item'>3.优惠券可在“我的-我的优惠券”中查看；</view>
+    <view class='coupon-sysm-item'>4.此优惠券可转赠他人使用；</view>
+    <view class='coupon-sysm-item'>5.成功购买，经店铺核销赢得100积分；</view>
+    <view class='coupon-sysm-item'>6.成功邀请他人购买，经店铺核销赢得200积分；</view>
+  </view>
+</view>
+<view class='btn-box'>
+  <button class='btn yellow-btn mb20' bindtap='receive'>领取优惠券</button>
+  <button class='btn yellow-btn' open-type="share">我要分享</button>
+</view>

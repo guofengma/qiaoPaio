@@ -1,0 +1,5 @@
+@import "/pages/template/infoItem/infoItem.wxss";
+
+.list-box{
+	border-top: 1rpx solid #f0f0f0;
+}

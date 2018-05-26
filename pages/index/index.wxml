@@ -1,0 +1,110 @@
+<!-- 信息 模板  -->
+<import src="/pages/template/infoItem/infoItem.wxml" />
+<!-- // 引入模板 -->
+<import src="/pages/wxParse/wxParse.wxml"/>
+
+<view class="slogn">
+  <view class='dslogn'>壳牌工程机械专用油</view>
+  <view class='xslogn'>专属保护，劲能高效</view>
+</view>
+
+<!-- 搜索框  -->
+<view class="search-box">
+  <icon type="search" size="16" value="" color='#a6a6a6' class='search-icon' />
+  <input class='search' type='search' placeholder='搜索' bindinput='saveInput' bindconfirm='bindSearch' confirm-type="search" ></input>
+  <text class='search-btn' bindtap='bindSearch'>搜索</text>
+</view>
+
+<!--轮播图-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true" indicator-color="#72704e" indicator-active-color="#fcce07">
+  <block wx:for="{{slideImgs}}" wx:key="item">
+    <swiper-item class="swiper" data-link="{{item.slideLink}}" data-seq-Id="{{item.slideLink}}" bindtap="toLink">
+      <image src="{{item.imgUrl}}" class="swiper"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 分类 -->
+<view class='cate-box'>
+  <view class='cate-item' data-busitype="brand" bindtap='toCateInfoList'>
+    <image class='cate-icon' mode='widthFix' src="/images/cate-01.png"></image>
+    <view class='cate-name'>品牌专区</view>
+  </view>
+  <view class='cate-item' data-busitype="tech" bindtap='toCateInfoList'>
+    <image class='cate-icon' mode='widthFix' src="/images/cate-02.png"></image>
+    <view class='cate-name'>技术领先</view>
+  </view>
+  <view class='cate-item' data-busitype="testimony" bindtap='toCateInfoList'>
+    <image class='cate-icon' mode='widthFix' src="/images/cate-03.png"></image>
+    <view class='cate-name'>产品证言</view>
+  </view>
+  <view class='cate-item' data-busitype="leader" bindtap='toCateInfoList'>
+    <image class='cate-icon' mode='widthFix' src="/images/cate-04.png"></image>
+    <view class='cate-name'>行业大咖</view>
+  </view>
+</view>
+
+<!-- 信息标题和列表  品牌专区 -->
+<view class='info-list-box'>
+  <!-- 标题  -->
+  <view class='info-tit-box'>
+    <image class='info-list-tit-icon' mode='widthFix' src="/images/cate-01h.png"></image>
+    <text class='info-list-tit'>品牌专区 —— 大品牌有大保障</text>
+    <text class='more' data-busitype="brand" bindtap='toCateInfoList'>MORE</text>
+    <image class='right' mode='widthFix' src="/images/right-01.png"></image>
+  </view>
+
+  <!-- 信息列表  -->
+  <!-- 信息 模板  -->
+  <block wx:for="{{brandList}}" wx:key="l">
+    <template is="infoItem" data="{{...item,name:brandArr,index}}"/>
+  </block>
+</view>
+
+<!-- 信息标题和列表  技术领先 -->
+<view class='info-list-box'>
+  <!-- 标题  -->
+  <view class='info-tit-box'>
+    <image class='info-list-tit-icon' mode='widthFix' src="/images/cate-02h.png"></image>
+    <text class='info-list-tit'>技术领先 —— 谁家还没个绝活</text>
+    <text class='more' data-busitype="tech" bindtap='toCateInfoList'>MORE</text>
+    <image class='right' mode='widthFix' src="/images/right-01.png"></image>
+  </view>
+  <!-- 信息列表  -->
+  <!-- 信息 模板  -->
+  <block wx:for="{{techList}}" wx:key="l">
+    <template is="infoItem" data="{{...item,name:techArr,index}}"/>
+  </block>
+</view>
+
+<!-- 信息标题和列表  产品证言 -->
+<view class='info-list-box'>
+  <!-- 标题  -->
+  <view class='info-tit-box'>
+    <image class='info-list-tit-icon' mode='widthFix' src="/images/cate-03h.png"></image>
+    <text class='info-list-tit'>产品证言 —— 这油用了都说好</text>
+    <text class='more' data-busitype="testimony" bindtap='toCateInfoList'>MORE</text>
+    <image class='right' mode='widthFix' src="/images/right-01.png"></image>
+  </view>
+  <!-- 信息列表  -->
+  <!-- 信息 模板  -->
+  <block wx:for="{{testimonyList}}" wx:key="l">
+    <template is="infoItem" data="{{...item,name:testimonyArr,index}}"/>
+  </block>
+</view>
+
+<!-- 信息标题和列表  行业大咖 -->
+<view class='info-list-box'>
+  <!-- 标题  -->
+  <view class='info-tit-box'>
+    <image class='info-list-tit-icon' mode='widthFix' src="/images/cate-04h.png"></image>
+    <text class='info-list-tit'>行业大咖 —— 听专家的涨姿势</text>
+    <text class='more' data-busitype="leader" bindtap='toCateInfoList'>MORE</text>
+    <image class='right' mode='widthFix' src="/images/right-01.png"></image>
+  </view>
+  <!-- 信息列表  -->
+  <!-- 信息 模板  -->
+  <block wx:for="{{leaderList}}" wx:key="l">
+    <template is="infoItem" data="{{...item,name:leaderArr,index}}"/>
+  </block>
+</view>

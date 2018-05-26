@@ -1,0 +1,18 @@
+<view class="jfgz-box">
+  <view class='jfgz-tit'>积分规则说明</view>
+  <view class='jfgz-con'>
+    <view class='jf-con-tit'>一、如何获得积分？</view>
+    <view class='jfgz-item'>新用户注册积100分；</view>
+    <view class='jfgz-item'>用户日常打卡每日积2分；</view>
+    <view class='jfgz-item'>每条内容观看积2分(每条内容仅限积分1次)；</view>
+    <view class='jfgz-item'>参与话题活动积10分(每个话题仅限积分1次)；</view>
+    <view class='jfgz-item'>凭优惠券完成壳牌工程机械润滑油线下购买，且经过线下门店核销，每次积100分；</view>
+    <view class='jfgz-item'>分享内容积分5分(每条内容仅限积分1次)；</view>
+    <view class='jfgz-item'>成功邀请好友注册小程序积100分；</view>
+    <view class='jfgz-item'>成功邀请好友参与话题活动积20分 每个话题仅限积分1次）；</view>
+    <view class='jfgz-item'>成功邀请好友使用优惠券完成壳牌工程机械专用线下购买，且经线下门店核销，每次积200分。</view>
+    <view class='jf-con-tit'>二、积分查看和兑换</view>
+    <view class='jfgz-item'>在积分商场中查看积分和兑换积分。</view>
+  </view>
+  <view class='jf-hint'>积分注意事项：不同账户积分不可合并使用</view>
+</view>

@@ -1,0 +1,28 @@
+@import "/pages/coupon/coupon.wxss";
+
+.hxm{
+	background: #fff;
+	color: #fc4e6b;
+	display: inline-block;
+	padding: 2rpx 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+}
+.ysy{
+  color: #fca0a9;
+}
+.wsy{
+  color: #fddc35;
+}
+.ed-box{
+  flex: 0 0 100rpx;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+	font-size: 32rpx;
+	width: 30rpx;
+  text-align: center;
+}
+.ed-box .text{
+  width: 100%;
+  word-wrap: break-word;
+}

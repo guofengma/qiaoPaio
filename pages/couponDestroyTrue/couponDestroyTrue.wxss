@@ -1,0 +1,35 @@
+.hint-box{
+	border-top: 1rpx solid #f0f0f0;  
+	padding-top: 90rpx;
+	text-align: center;
+}
+.success{
+	width: 200rpx;
+	margin-bottom: 40rpx;
+}
+.hint{
+	font-size: 36rpx;
+	font-weight: 600;
+	margin-bottom: 70rpx;
+}
+.top-line{
+	border-top: 1rpx solid #f0f0f0;  
+}
+.line-box{
+	height: 100rpx;
+	border-bottom: 1rpx solid #f0f0f0;
+	padding: 0 30rpx;
+	background: #fff;
+}
+
+.line-icon{
+	width: 36rpx;
+	margin-right: 30rpx;
+}
+.line-name{
+	flex:1;
+}
+
+.right{
+	width: 12rpx;
+}

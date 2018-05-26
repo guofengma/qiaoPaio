@@ -1,0 +1,38 @@
+<view class="list-box">
+
+  <!-- <view class='coupon-item center-flex' bindtap='goTo' data-index='0' data-seq-id='{{item.seqId}}' wx:for='{{selectedList}}' wx:key='index'>
+    <image class='coupon-bg' mode='widthFix' src='/images/quan-bg.png'></image>
+    <view class='ed-box'>
+      <view class='text'>{{item.ticketMoney}}</view>
+      <view class='text'>元</view>
+    </view>
+    <view class='coupon-info-box'>
+      <view class='coupon-info-tit'>{{item.ticketTxt}}</view>
+      <view class='coupon-info-con'>
+        {{item.ticketDetail}}
+      </view>
+      <view class='coupon-yxq'>有效期:{{item.startTime}}-{{item.endTime}}</view>
+    </view>
+    <view class='coupon-handle-box' data-seq-id='{{item.seqId}}' catchtap='receive'>立即领取</view>
+  </view> -->
+
+
+  <view class='coupon-item center-flex' bindtap='goTo' data-index='0' data-seq-id='{{item.seqId}}' wx:for='{{selectedList}}' wx:key='index'>
+    <image class='coupon-bg' mode='widthFix' src='/images/quan-bg.png'></image>
+    <view class='ed-box'>
+      <view class='text'>优</view>
+      <view class='text'>惠</view>
+      <view class='text'>券</view>
+    </view>
+    <view class='coupon-info-box'>
+      <view class='coupon-info-tit'>凭此券购买</view>
+      <view class='coupon-info-con'>
+        <view>壳牌工程机械专用油</view>
+        <view>话费随机送，100%中奖</view>
+      </view>
+      <view class='xsm'>成功购买，经店铺核销赢得100积分。成功邀请他人购买，经店铺核销赢得200积分。</view>
+      <view class='coupon-yxq'>仅限线下门店下使用</view>
+    </view>
+    <view class='coupon-handle-box' data-seq-id='{{item.seqId}}' catchtap='receive'>立即领取</view>
+  </view>
+</view>

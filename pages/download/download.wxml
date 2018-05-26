@@ -1,0 +1,7 @@
+<view class="list-box">
+  <view class="line-box center-flex" wx:for="{{fileList}}" wx:key="f" data-path="{{item.filePath}}" data-index="{{index}}" bindtap='openFile2'>
+    <text class='doc'>{{item.filePath}}</text>
+    <text class='del' data-path="{{item.filePath}}" data-index="{{index}}" catchtap='delFile'>删除</text>
+  </view>
+  <view class='noData' wx:if="{{fileList.length == 0}}">暂无数据</view>
+</view>

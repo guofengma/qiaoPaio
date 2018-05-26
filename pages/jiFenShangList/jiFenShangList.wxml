@@ -1,0 +1,20 @@
+<!--pages/jiFenShangList/jiFenShangList.wxml-->
+<view class='jiFenShangList'>
+  <view class='dh-box'>
+
+    <view class="dh-item center-flex" wx:for="{{selectedList}}" wx:key="l">
+
+      <image class='dh-img' src="{{item.goodsImg}}"></image>
+      
+      <view class='sp-info'>
+        <view class='pro-name'>{{item.goodsName}}</view>
+        <view class='price'>核销码：{{item.applyCode}}</view>
+        <!-- <view class='dh-hint'>正在抢兑中......</view> -->
+      </view>
+      <!-- <view class='dh-btn ljdh jfbz' data-index='1' bindtap='goTo'>立即兑换</view> -->
+      <view wx:if="{{item.isVerify == 1}}" class='dh-btn jfbz'>已核销</view>
+    </view>
+
+  </view>
+  <view class='noData' wx:if="{{selectedList.legth == 0}}">暂无数据</view>
+</view>

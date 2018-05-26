@@ -1,0 +1,41 @@
+page{
+	background: #f1f1f1;
+}
+.rank-tit-box{
+	height: 130rpx;
+	padding: 20rpx;
+	box-sizing: border-box;
+	background: #ededed;
+	text-align: center;
+}
+.rank-slogn{
+	font-size: 32rpx;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 10rpx;
+}
+.rank-hint{
+	color: #666;
+}
+
+.line-box{
+	height: 100rpx;
+	border-bottom: 1rpx solid #e2e2e2;
+	padding: 0 30rpx;
+	background: #fff;
+}
+.line-img{
+	width: 68rpx;
+	margin-right: 20rpx;
+}
+
+.line-name{
+	flex:1;
+}
+
+.jifen{
+	color: #fddc35;
+}
+.my .jifen{
+	color: #dc1721;
+}

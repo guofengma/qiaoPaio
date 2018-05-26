@@ -1,0 +1,26 @@
+<view class="wdjf">
+  <image class='jf-bg' mode="widthFix" src="/images/jf-bg.png"></image>
+  <image class='user-head' mode='widthFix' src="{{bean.wxImg}}"></image>
+  <view class='jfxx'>
+    <text class='jf-num'>{{bean.mbIntegral}}</text>
+    <image class='jf-icon' mode='widthFix' src="/images/jf.png"></image>
+  </view>
+  <view class='jf-hint wddh' bindtap='goTo' data-index='2'>我的兑换</view>
+  <view class='jfgz-box' bindtap='goTo' data-index='0'>
+    <image class='wh' mode='widthFix' src='/images/wh.png'></image>
+    <text class='jfgz'>积分规则</text>
+  </view>
+</view>
+
+<view class='dh-box'>
+  <view class="dh-item center-flex" wx:for='{{selectedList}}' wx:key="{{index}}">
+    <image class='dh-img'  src="{{item.goodsImg}}"></image>
+    <view class='sp-info'>
+      <view class='pro-name'>{{item.goodsDetail}}</view>
+      <view class='price'>{{item.integralNum}}积分</view>
+      <view class='dh-hint'>{{(item.limitNum - item.applyNum>0) ? '正在抢兑中......':'已兑换完了'}}</view>
+    </view>
+    <view wx:if="{{item.limitNum - item.applyNum>0}}" class='dh-btn ljdh ljdh' data-seq-id='{{item.seqId}}' data-integral-num='{{item.integralNum}}'  data-index='1' bindtap='goTo'>立即兑换</view>
+    <view wx:else class='dh-btn ljdh jfbz'>立即兑换</view>
+  </view>
+</view>

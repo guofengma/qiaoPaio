@@ -1,0 +1,34 @@
+<!-- // 引入模板 -->
+<import src="/pages/wxParse/wxParse.wxml"/>
+<template name="infoItem">
+  <view class="info-item" data-id="{{seqId}}" bindtap='toDetail'>
+
+    <view class='info-info-box'>
+
+      <view class='info-img-box'>
+        <image class='info-img' mode='widthFix' src="{{infoImg}}"></image>
+      </view>
+
+      <view class='item-info-box'>
+        <view class='item-tit'>{{infoTitle}}</view>
+        <view class='info-con'>
+          <!-- <block wx:for="{{name}}" wx:key="" wx:for-index="t">
+            <view wx:if="{{t == index}}">
+              <template is="wxParse" data="{{wxParseData:item}}"/>
+            </view>
+          </block> -->
+          {{infoIntro}}
+        </view>
+      </view>
+
+    </view>
+    <view class='comment-box'>
+      <view class='comment-item' wx:for="{{replyList}}" wx:key="r" wx:for-index="r" wx:for-item="ritem">
+        <view class='cmt-user'>{{r}}：</view>
+        <view class='cmt-con'>
+          {{item.replyContent}}  
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

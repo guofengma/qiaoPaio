@@ -1,0 +1,24 @@
+@import "../login/login.wxss";
+
+.yzm-btn{
+  color: #dc1721;
+}
+.shade{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	padding-top: 300rpx;
+	z-index: 5;
+}
+.song{
+	width: 402rpx;
+	height: 571rpx;
+}
+.close{
+	width: 69rpx;
+	position: absolute;
+}

@@ -1,0 +1,8 @@
+<view class='des-box'>
+  <view class="des-tit">请输入核销码</view>
+  <input class='des-input' bindinput='saveInput' value='{{ticketCode}}'></input>
+</view>
+<view class='btn-box'>
+  <button class='btn yellow-btn' bindtap='destory'>确认核销</button>
+  <button class='btn grey-btn' bindtap='storeSignOut'>退出登录</button>
+</view>

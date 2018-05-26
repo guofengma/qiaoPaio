@@ -1,0 +1,19 @@
+<view class="logo-box">
+  <image class='logo' mode='widthFix' src="/images/logo.png"></image>
+  <view class='slogn'>壳牌工程机械英雄会</view>
+</view>
+<view class='form-box'>
+  <view class='form-controller'>
+    <image class='sign-icon' mode='widthFix' src="/images/user.png"></image>
+    <input type="text" name="" data-name="proAccount" bindinput='saveInput' placeholder="请输入手机号" class="form-input"></input>
+  </view>
+  <view class='form-controller'>
+    <image class='sign-icon' mode='widthFix' src="/images/pass.png"></image>
+    <input type="password" name="" data-name="proPwd" bindinput='saveInput' placeholder="请输入密码" class="form-input"></input>
+  </view>
+</view>
+<button class="btn form-btn red-btn" bindtap='salesLogin'>登录</button>
+<view class='sgin-hint'>
+  <text>没有账号?</text>
+  <text class='sign-link' bindtap='toRegister'>注册账号</text>
+</view>

@@ -1,0 +1,11 @@
+<view class="choose-box center-flex">
+  <view class='cate-item'>
+    <image class='choose-img' mode='widthFix' bindtap='tocouponDestroy' data-index="1" src="/images/des-cate-01.png"></image>
+  </view>
+  <view class='cate-item'>
+    <image class='choose-img' mode='widthFix' bindtap='tocouponDestroy' data-index="2" src="/images/des-cate-02.png"></image>
+  </view>
+</view>
+<view class='change-box'>
+  <button class='yellow-btn' bindtap='tochangeStorePwd'>修改门店密码</button>
+</view>

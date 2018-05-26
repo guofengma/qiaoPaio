@@ -1,0 +1,32 @@
+<view class="logo-box">
+  <image class='logo' mode='widthFix' src="/images/logo.png"></image>
+  <view class='slogn'>壳牌工程机械英雄会</view>
+</view>
+<view class='form-box'>
+  <view class='form-controller'>
+    <image class='sign-icon' mode='widthFix' src="/images/pass.png"></image>
+    <input type="text" name="" data-name="manAccount" bindinput='saveInput' placeholder="请输入用户名" class="form-input"></input>
+  </view>
+  <view class='form-controller'>
+    <image class='sign-icon' mode='widthFix' src="/images/user.png"></image>
+    <input type="number" name=""  data-name="phone" bindinput='saveInput' placeholder="请输入手机号码" class="form-input"></input>
+    <text class='yzm-btn'  bindtap='sendCode'>{{sendHint}}</text>
+  </view>
+  <view class='form-controller'>
+    <image class='sign-icon' mode='widthFix' src="/images/yzm.png"></image>
+    <input type="text" name="" data-name="smsCode" bindinput='saveInput' placeholder="请输入验证码" class="form-input"></input>
+  </view>
+  <view class='form-controller'>
+    <image class='sign-icon' mode='widthFix' src="/images/pass.png"></image>
+    <input type="password" name="" data-name="proPwd" bindinput='saveInput' placeholder="请输入密码" class="form-input"></input>
+  </view>
+</view>
+<button class="btn form-btn red-btn" bindtap='salesLogin'>注册</button>
+<view class='sgin-hint'>
+  <text>已有账号,</text>
+  <text class='sign-link' bindtap='toLogin'>返回登录</text>
+</view>
+<view class="shade" wx:if="{{show}}" bindtap='closeShade'>
+  <image class='song' src='/images/song.png' mode='widthFix'></image>
+  <image class='close' src='/images/close.png' mode='widthFix'></image>
+</view>

@@ -1,0 +1,46 @@
+.logo-box{
+	border-top: 1rpx solid #f0f0f0;
+	text-align: center;
+	padding-top: 64rpx;
+	margin-bottom: 100rpx;
+}
+.logo{
+	width: 200rpx;
+	margin-bottom: 20rpx;
+}
+.slogn{
+	font-weight: 600;
+	font-size: 32rpx;
+}
+.form-controller{
+	height: 100rpx;
+	border-bottom: 1rpx solid #f0f0f0;
+	padding: 0 60rpx;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+.sign-icon{
+	width: 24rpx;
+	height: 32rpx;
+	margin-right: 20rpx;
+}
+.form-input{
+	padding-left: 20rpx;
+  flex: 1;
+}
+.form-btn{
+	margin: 80rpx 80rpx 50rpx;
+	border-radius: 40rpx;
+}
+.red-btn{
+	background: #dd1d21;
+	color: #fff;
+	font-size: 32rpx;
+}
+.sgin-hint{
+	text-align: center;
+}
+.sign-link{
+	color: #fcce07;
+}

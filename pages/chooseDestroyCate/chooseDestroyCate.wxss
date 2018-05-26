@@ -1,0 +1,25 @@
+.choose-box{
+	margin-top: 230rpx;
+	padding: 0 30rpx;
+}
+
+.cate-item{
+	width: 50%;
+	text-align: center;
+}
+.choose-img{
+	width: 250rpx;
+	margin-bottom: 50rpx;
+}
+
+.change-box{
+  margin-top: 50rpx;
+  padding: 20rpx;
+}
+
+.yellow-btn {
+  background:#fddc35;
+  color:#32383b;
+  border-radius:10rpx;
+  border:1rpx solid #fddc35;
+}
