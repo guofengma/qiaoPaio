@@ -40,7 +40,12 @@
 }
 .sgin-hint{
 	text-align: center;
+  margin-bottom: 50rpx;
 }
 .sign-link{
 	color: #fcce07;
 }
+.sign-forget{
+	color: red;
+}
+

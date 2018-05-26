@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/forgetPwd/forgetPwd",
     "pages/accredit/accredit",
     "pages/smDestroy/smDestroy",
-    "pages/login/login",
     "pages/chooseDestroyCate/chooseDestroyCate",
     "pages/index/index",
     "pages/jiFenGuiZe/jiFenGuiZe",

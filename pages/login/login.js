@@ -111,7 +111,13 @@ Page({
         url: '/pages/register/register',
       })
     }
-    
+  },
+
+  //密码重置
+  toForget(e){
+    wx.navigateTo({
+      url: '/pages/forgetPwd/forgetPwd',
+    })
   },
 
   /**

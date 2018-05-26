@@ -164,4 +164,10 @@ export default {
   //修改门店密码
   changeStorePwd:zsLedUrl+"/storemng/updatePsw.do?oid="+oid,
 
+  //判断手机号是否是会员
+  isUser:zsLedUrl+"/storesalesman/forgetPsw.do?oid="+oid,
+
+  //密码重置
+  reSetPwd:zsLedUrl+"/storesalesman/updatePsw.do?oid="+oid,
+
 }
